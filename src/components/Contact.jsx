@@ -8,9 +8,18 @@ const Contact = ({ fadeInUpClass }) => {
   const [form] = Form.useForm();
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (values) => {
-    setSubmitted(true);
-    form.resetFields();
+  const handleSubmit = async (values) => {
+    try {
+      await fetch('https://sheetdb.io/api/v1/1whjqol98wegw', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data: values }),
+      });
+      setSubmitted(true);
+      form.resetFields();
+    } catch (error) {
+      alert('Gửi thất bại!');
+    }
   };
 
   return (
@@ -63,7 +72,7 @@ const Contact = ({ fadeInUpClass }) => {
                 htmlType="submit"
                 size="large"
                 block
-                className="!rounded-button whitespace-nowrap cursor-pointer"
+                className="!rounded-button whitespace-nowrap cursor-pointer bg-blue-500 hover:bg-blue-600"
               >
                 Send Message
               </Button>
