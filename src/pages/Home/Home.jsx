@@ -5,7 +5,7 @@ import Hero from '../../components/Hero';
 import About from '../../components/About';
 import Skills from '../../components/Skills';
 import Projects from '../../components/Projects';
-import Certificates from '../../components/Certificates';
+import ProfessionalJourney from '../../components/ProfessionalJourney';
 import Contact from '../../components/Contact';
 import useFadeInOnScroll from '../../hooks/useFadeInOnScroll';
 import scrollToSection from '../../utils/scrollToSection';
@@ -17,7 +17,9 @@ const skills = {
     { name: 'HTML/CSS', level: 95 },
     { name: 'JavaScript', level: 90 },
     { name: 'React', level: 85 },
-    { name: 'TypeScript', level: 55 },
+    { name: 'Ant Design', level: 85 },
+    { name: 'Bootstrap', level: 85 },
+    { name: 'TailwindCSS', level: 95 },
   ],
   backend: [
     { name: 'PHP', level: 85 },
@@ -45,7 +47,7 @@ const projects = [
     title: 'Calendar',
     description: 'A modern calendar web  with event management and responsive design.',
     tech: ['React + Vite', 'Redux Toolkit', 'Ant Design'],
-    demo: 'https://calendar-web-zeta.vercel.app',
+    demo: '',
     github: 'https://github.com/NamVo17/Calendar-App',
     role: 'Frontend Developer',
     image: '/calendar.png',
@@ -78,26 +80,7 @@ const projects = [
   },
 ];
 
-const certificates = [
-  {
-    title: 'React Developer Certification',
-    issuer: 'Meta',
-    date: '2023',
-    image: 'https://readdy.ai/api/search-image?query=professional%20certificate%20design%20with%20React%20logo%20and%20Meta%20branding%20clean%20modern%20certificate%20layout%20on%20white%20background&width=300&height=200&seq=cert1&orientation=landscape',
-  },
-  {
-    title: 'JavaScript Algorithms',
-    issuer: 'freeCodeCamp',
-    date: '2022',
-    image: 'https://readdy.ai/api/search-image?query=JavaScript%20certification%20badge%20with%20freeCodeCamp%20logo%20professional%20certificate%20design%20on%20white%20background&width=300&height=200&seq=cert2&orientation=landscape',
-  },
-  {
-    title: 'AWS Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    date: '2023',
-    image: 'https://readdy.ai/api/search-image?query=AWS%20cloud%20certification%20badge%20with%20Amazon%20logo%20professional%20certificate%20design%20on%20white%20background&width=300&height=200&seq=cert3&orientation=landscape',
-  },
-];
+
 
 const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -117,7 +100,7 @@ const Home = () => {
       <About fadeInUpClass={fadeInUpClass} />
       <Skills skills={skills} fadeInUpClass={fadeInUpClass} />
       <Projects projects={projects} fadeInUpClass={fadeInUpClass} />
-      <Certificates certificates={certificates} />
+      <ProfessionalJourney />
       <Contact fadeInUpClass={fadeInUpClass} />
       <Footer />
     </div>

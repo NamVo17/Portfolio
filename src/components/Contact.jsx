@@ -109,7 +109,7 @@ const Contact = ({ fadeInUpClass }) => {
                 shape="circle"
                 size="large"
                 icon={<LinkedinOutlined />}
-                href="https://linkedin.com/in/nam-developer"
+                href="https://www.linkedin.com/in/v%C3%B5-c%C3%B4ng-nam-00a192326/"
                 target="_blank"
                 className="cursor-pointer"
               />
@@ -117,7 +117,7 @@ const Contact = ({ fadeInUpClass }) => {
                 shape="circle"
                 size="large"
                 icon={<GithubOutlined />}
-                href="https://github.com/nam-developer"
+                href="https://github.com/NamVo17"
                 target="_blank"
                 className="cursor-pointer"
               />
@@ -125,10 +125,10 @@ const Contact = ({ fadeInUpClass }) => {
                 shape="circle"
                 size="large"
                 className="cursor-pointer"
-                href="https://behance.net/nam-developer"
+                href="https://www.facebook.com/nam.vo.332753"
                 target="_blank"
               >
-                <i className="fab fa-behance text-lg"></i>
+                <i className="fab fa-facebook-f text-lg"></i>
               </Button>
             </div>
           </div>

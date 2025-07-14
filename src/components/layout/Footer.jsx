@@ -11,7 +11,7 @@ const Footer = () => (
         <div className="mb-8 flex justify-center gap-4">
           <a href="https://linkedin.com/in/nam-developer" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer text-2xl"><i className="fab fa-linkedin"></i></a>
           <a href="https://github.com/nam-developer" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer text-2xl"><i className="fab fa-github"></i></a>
-          <a href="https://behance.net/nam-developer" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer text-2xl"><i className="fab fa-behance"></i></a>
+          <a href="https://www.facebook.com/nam.vo.332753" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer text-2xl"><i className="fab fa-facebook-f"></i></a>
         </div>
         <div className="border-t border-gray-800 pt-6">
           <span className="text-gray-400">© 2024 NamVo. All rights reserved.</span>
