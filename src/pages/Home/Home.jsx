@@ -63,7 +63,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'Responsive portfolio website with modern animations',
     tech: ['React', 'Tailwind CSS', 'Ant Design', 'JavaScript'],    
-    demo: 'https://portfolio.example.com',
+    demo: 'https://portfolio-namvos-projects.vercel.app',
     github: 'https://github.com/NamVo17/portfolio',
     role: 'Frontend Developer',
     image: '/portfolio.png',
