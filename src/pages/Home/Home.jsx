@@ -47,7 +47,7 @@ const projects = [
     title: 'Calendar',
     description: 'A modern calendar web  with event management and responsive design.',
     tech: ['React + Vite', 'Redux Toolkit', 'Ant Design'],
-    demo: '',
+    demo: 'https://calendar-web-zeta.vercel.app/',
     github: 'https://github.com/NamVo17/Calendar-App',
     role: 'Frontend Developer',
     image: '/calendar.png',
