@@ -19,7 +19,7 @@ const Hero = ({ onProjectsClick, onContactClick }) => (
             Hi, I'm Nam – Frontend Developer
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-          Passionate about crafting intuitive, high-performance web interfaces using modern frontend technologies like React.js, JavaScript, and CSS.
+          Passionate about crafting intuitive, high-performance web interfaces using modern frontend technologies like React.js, JavaScript, TypeScript and CSS.
           Comfortable with backend integration using PHP and MySQL, with a keen interest in expanding my full-stack capabilities
           </p>
           <div className="flex flex-wrap gap-4">

@@ -44,7 +44,7 @@ const About = ({ fadeInUpClass }) => (
             />
           </div>
           <a
-              href="/VoCongNam_Frontend_CV.pdf"
+              href="/VoCongNam_Frontend_Intern_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
