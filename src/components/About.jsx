@@ -10,7 +10,7 @@ const About = ({ fadeInUpClass }) => (
         <div>
           <h3 className="text-2xl font-semibold mb-6 text-gray-900">Professional Journey</h3>
           <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-          As a recent Information Systems graduate with a passion for frontend development, I specialize in building responsive, user-centric web applications using HTML, CSS, JavaScript, and React.js. My academic projects and internships have equipped me with hands-on experience in modern web development, including PHP and MySQL for backend integration.
+          As a recent Information Systems graduate with a passion for frontend development, I specialize in building responsive, user-centric web applications using HTML, CSS, JavaScript,TypeScript and React.js. My academic projects and internships have equipped me with hands-on experience in modern web development, including PHP and MySQL for backend integration.
           </p>
           <p className="text-gray-600 mb-6 text-lg leading-relaxed">
           I thrive on transforming ideas into seamless, interactive experiences and enjoy collaborating across teams to solve technical challenges. Eager to contribute my foundational full-stack knowledge (frontend-focused with backend awareness) and grow in a dynamic development environment.
