@@ -60,7 +60,7 @@ const projects = [
     ],
     demo: "https://crypto-web-fullstack.vercel.app/", // You can add your actual demo link
     github: "https://github.com/NamVo17/CryptoWebFullstack",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     responsibilities: [
       "Developed responsive frontend UI using React.js and Tailwind CSS",
       "Implemented real-time data updates using WebSocket",
