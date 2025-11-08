@@ -20,7 +20,7 @@ export default function FloatingBalloons() {
         <motion.div
           key={i}
           initial={{ y: "100vh", opacity: 0 }}
-          animate={{ y: "-580px", opacity: 1, transition: { duration: 12, ease: "linear" } }}
+          animate={{ y: "-780px", opacity: 1, transition: { duration: 12, ease: "linear" } }}
           className="absolute w-[85px]"
           style={{ top: b.top, left: b.left }}
         >
