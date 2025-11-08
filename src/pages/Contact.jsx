@@ -35,8 +35,8 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     Swal.fire({
-      title: 'Mengirim Pesan...',
-      html: 'Harap tunggu selagi kami mengirim pesan Anda',
+      title: 'Send a message...',
+      html: 'Please wait while we send your message.',
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
@@ -45,14 +45,14 @@ const ContactPage = () => {
 
     try {
       // Ganti dengan email Anda di FormSubmit
-      const formSubmitUrl = 'https://formsubmit.co/ekizulfarrachman@gmail.com';
+      const formSubmitUrl = 'https://formsubmit.co/vocongnam172@gmail.com';
       
       // Siapkan data form untuk FormSubmit
       const submitData = new FormData();
       submitData.append('name', formData.name);
       submitData.append('email', formData.email);
       submitData.append('message', formData.message);
-      submitData.append('_subject', 'Pesan Baru dari Website Portfolio');
+      submitData.append('_subject', 'New message from portfolio site');
       submitData.append('_captcha', 'false'); // Nonaktifkan captcha
       submitData.append('_template', 'table'); // Format email sebagai tabel
 
@@ -64,8 +64,8 @@ const ContactPage = () => {
 
      
       Swal.fire({
-        title: 'Berhasil!',
-        text: 'Pesan Anda telah berhasil terkirim!',
+        title: 'Success!',
+        text: 'Your message has been sent successfully!',
         icon: 'success',
         confirmButtonColor: '#6366f1',
         timer: 2000,
@@ -81,8 +81,8 @@ const ContactPage = () => {
     } catch (error) {
       if (error.request && error.request.status === 0) {
         Swal.fire({
-          title: 'Berhasil!',
-          text: 'Pesan Anda telah berhasil terkirim!',
+          title: 'Success!',
+          text: 'Your message has been sent successfully!',
           icon: 'success',
           confirmButtonColor: '#6366f1',
           timer: 2000,
@@ -96,8 +96,8 @@ const ContactPage = () => {
         });
       } else {
         Swal.fire({
-          title: 'Gagal!',
-          text: 'Terjadi kesalahan. Silakan coba lagi nanti.',
+          title: 'Failure!',
+          text: 'An error occurred. Please try again later.',
           icon: 'error',
           confirmButtonColor: '#6366f1'
         });
