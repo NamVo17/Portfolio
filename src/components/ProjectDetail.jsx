@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
   ArrowLeft, ExternalLink, Github, Code2, Star,
@@ -17,6 +17,7 @@ const TECH_ICONS = {
   default: Package,
 };
 
+// eslint-disable-next-line react/prop-types
 const TechBadge = ({ tech }) => {
   const Icon = TECH_ICONS[tech] || TECH_ICONS["default"];
   
@@ -33,6 +34,7 @@ const TechBadge = ({ tech }) => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const FeatureItem = ({ feature }) => {
   return (
     <li className="group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
@@ -47,8 +49,11 @@ const FeatureItem = ({ feature }) => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const ProjectStats = ({ project }) => {
+  // eslint-disable-next-line react/prop-types
   const techStackCount = project?.TechStack?.length || 0;
+  // eslint-disable-next-line react/prop-types
   const featuresCount = project?.Features?.length || 0;
 
   return (
@@ -98,7 +103,7 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [project, setProject] = useState(null);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);

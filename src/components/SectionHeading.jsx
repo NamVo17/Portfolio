@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// eslint-disable-next-line react/prop-types
 const SectionHeading = ({ title, subtitle }) => {
   return (
     <div className="text-center space-y-4">

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./index.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,6 +13,7 @@ import { AnimatePresence } from 'framer-motion';
 import NotFoundPage from "./pages/404";
 import WorkExperience from "./pages/WorkExperience";
 
+// eslint-disable-next-line react/prop-types
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
     <>

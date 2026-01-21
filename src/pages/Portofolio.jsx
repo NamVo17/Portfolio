@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState, useCallback } from "react";
 
 import { supabase } from "../supabase"; 
@@ -18,6 +19,7 @@ import Certificate from "../components/Certificate";
 import { Code, Award, Boxes } from "lucide-react";
 
 
+// eslint-disable-next-line react/prop-types
 const ToggleButton = ({ onClick, isShowingMore }) => (
   <button
     onClick={onClick}

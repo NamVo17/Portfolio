@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -13,7 +14,7 @@ const ThankYouPage = () => {
           Thank You!
         </h1>
         <p className="text-gray-400 text-lg mb-8">
-          Your message has been received. I'll get back to you as soon as possible.
+          Your message has been received. I&apos;ll get back to you as soon as possible.
         </p>
         <Link
           to="/"

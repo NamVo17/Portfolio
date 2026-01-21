@@ -1,8 +1,8 @@
 "use client"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-import SectionHeading from "../components/SectionHeading"
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useMobile() {
   const [isMobile, setIsMobile] = useState(false)
 

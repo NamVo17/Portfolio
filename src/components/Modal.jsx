@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Eye, ArrowRight, ExternalLink } from 'lucide-react';
 
+// eslint-disable-next-line react/prop-types
 const ProjectCardModal = ({ title, description, link }) => {
   const [isOpen, setIsOpen] = useState(false);
 

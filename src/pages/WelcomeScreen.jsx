@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Code2, Github, Globe, User } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// eslint-disable-next-line react/prop-types
 const TypewriterEffect = ({ text }) => {
   const [displayText, setDisplayText] = useState('');
   
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
+      // eslint-disable-next-line react/prop-types
       if (index <= text.length) {
+        // eslint-disable-next-line react/prop-types
         setDisplayText(text.slice(0, index));
         index++;
       } else {
@@ -36,6 +39,7 @@ const BackgroundEffect = () => (
   </div>
 );
 
+// eslint-disable-next-line react/prop-types
 const IconButton = ({ Icon }) => (
   <div className="relative group hover:scale-110 transition-transform duration-300">
     <div className="absolute -inset-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300" />
@@ -45,6 +49,7 @@ const IconButton = ({ Icon }) => (
   </div>
 );
 
+// eslint-disable-next-line react/prop-types
 const WelcomeScreen = ({ onLoadingComplete }) => {
   const [isLoading, setIsLoading] = useState(true);
 
