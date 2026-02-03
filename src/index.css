@@ -19,11 +19,19 @@
 	scrollbar-color: rgba(99, 102, 241, 0.3) rgba(12, 5, 53, 0.356);
 }
 
-html,
-body {
-	overflow-x: hidden;
+/* Chỉ dùng 1 thanh scroll bao quát - overflow-x: clip không tạo scroll container như overflow-x: hidden */
+html {
+	overflow-x: clip;
+	overflow-y: auto;
 	background: #030014;
 	scroll-behavior: smooth !important;
+}
+
+body {
+	overflow-x: clip;
+	overflow-y: visible;
+	min-height: 100%;
+	background: #030014;
 }
 
 @keyframes blob {
