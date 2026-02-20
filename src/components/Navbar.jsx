@@ -15,7 +15,7 @@ const Navbar = () => {
         { href: "#Contact", label: "Contact" },
     ];
 
-    const resumeUrl = "https://drive.google.com/file/d/1t5Dq11jEQeSidsT3te5ogW4MvDjBD-qP/view?usp=drive_link";
+    const resumeUrl = "https://drive.google.com/file/d/1E_oPGMRfWwjAyVl0pwkGRDGC-YZwv45u/view?usp=sharing";
 
     useEffect(() => {
         const handleScroll = () => {
